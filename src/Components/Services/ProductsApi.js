@@ -1,6 +1,6 @@
 export default class ProductsApi{
     // static apiBase = `https://scandi-app.000webhostapp.com/api`; //real api base
-    static apiBase = `http://scandi.test/api`; //local api base
+    static apiBase = `http://scandi-api.test/api`; //local api base
     static accessApi = async(url_partial, requestMethod, params=false) =>{
         const fullUrl = `${ProductsApi.apiBase}/${url_partial}`;
         let response;

@@ -25,8 +25,8 @@ export default class Product extends ProductsApi{
                 err+="<li>Please, provide a float type price that's > 0</li>";
             }
             if(productType.value==="Furniture"){
-                if(!Validation.validNumInp(width)&&
-                !Validation.validNumInp(height)&&
+                if(!Validation.validNumInp(width)||
+                !Validation.validNumInp(height)||
                 !Validation.validNumInp(length)){
                     err+="<li>Please, provide a valid (float type) WxHxL. All three are required</li>";
                 }
